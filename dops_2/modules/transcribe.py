@@ -53,6 +53,5 @@ def transcribe_sequence(dna_sequence):
     if invalid:
         raise Error(f"Invalid nucleotide(s) in sequence: {invalid}")
     
-    mRNA = stripped.upper().replace("T", "U").lower()
+    mRNA = stripped.lower().replace("t", "u")
     return mRNA
-        
